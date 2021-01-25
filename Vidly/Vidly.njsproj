@@ -29,9 +29,33 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include=".gitIgnore" />
+    <Content Include=".jshintrc">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Authenticate.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Logger.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="models\customer.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="models\genre.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="routes\customers.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="routes\genres.js" />
     <Content Include="server.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="models\" />
+    <Folder Include="routes\" />
+    <Folder Include="Public\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
